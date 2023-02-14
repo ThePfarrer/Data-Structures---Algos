@@ -1,0 +1,18 @@
+1. 
+a. 1 step
+b. 100 steps
+c. 101 steps
+d. 1 step
+e. 101 steps --- wrong (it takes 100 steps instead of 101)
+f. 1 step
+
+
+2.
+a. 1 step
+b. 100 steps
+c. 101 steps --- wrong (it takes 201 steps instead of 101). This is because after searching it needs to shift each element of the set.
+d. 101 steps
+e. 100 steps
+f. 1 step
+
+3. N + 1 --- wrong ( it takes N steps because we have to search every element)
