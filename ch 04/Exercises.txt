@@ -1,0 +1,16 @@
+1. ## N Elements ## O(N) ## O(logN) ## O(N^2) ##
+   ## 100 ## 100 ## 7 ## 10,000 ##
+   ## 2,000 ## 2,000 ## 11 ## 4,000,000 ## 
+
+2. 16
+
+3. O(N^2)
+
+4. def greatestNumber(array):
+        greatestVal = array[0]
+
+        for i in array[1:]:
+            if greatestVal < i:
+                greatestVal = i
+
+        return greatestVal
