@@ -1,0 +1,7 @@
+1. O(N)
+    - Although it only loops through half the array, constants are dropped
+
+2. O(N + M) 
+    - the time complexity lies between N and M. If N >= M, then O(N). Else O(M) 
+
+3. 
