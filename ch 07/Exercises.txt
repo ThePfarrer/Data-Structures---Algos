@@ -4,4 +4,8 @@
 2. O(N + M) 
     - the time complexity lies between N and M. If N >= M, then O(N). Else O(M) 
 
-3. 
+3. O(N + M) -- wrong (O(N*M))
+
+4. O(N^3)
+
+5. O(logN)
