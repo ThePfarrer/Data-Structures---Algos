@@ -9,7 +9,7 @@ class Stack():
         return self.data.pop()
 
     def read(self):
-        return [] if  len(self.data) == 0 else self.data[-1]
+        return [] if not self.data else self.data[-1]
 
 
 class Linter():

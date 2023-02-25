@@ -7,6 +7,6 @@ class Queue:
 
     def dequeue(self):
         return self.data.pop(0)
-    
+
     def read(self):
-        return [] if  len(self.data) == 0 else self.data[0]
+        return [] if not self.data else self.data[0]
