@@ -2,6 +2,8 @@ class Node:
 
     def __init__(self, data, next=None, prev=None):
         self.data = data
+        self.next = next
+        self.prev = prev
 
 
 class DoublyLinkedList:
@@ -25,7 +27,7 @@ class DoublyLinkedList:
         removed_node = self.first_node
         self.first_node = self.first_node.next
         return removed_node
-    
+
     def print_list_in_reverse(self):
         output = ""
 

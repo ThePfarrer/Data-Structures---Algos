@@ -2,6 +2,7 @@ class Node:
 
     def __init__(self, data, next=None):
         self.data = data
+        self.next = next
 
 
 class LinkedList:
@@ -75,7 +76,7 @@ class LinkedList:
     def print_list(self):
         output = ""
 
-        while self.node is not None:
+        while self.node:
             output += str(self.node.data) + "->"
             self.node = self.node.next
 
@@ -87,5 +88,18 @@ class LinkedList:
         while current_node:
             current_node = current_node.next
 
-            if current_node.next is None:
-                return current_node.data
+        return current_node.data
+
+    def reverse(self):
+        current_node = self.node
+        reversed_node = Node(current_node.data)
+
+        while current_node:
+            current_node = current_node.next
+            reversed_node = Node(current_node.data, reversed_node)
+
+        self.node = reversed_node
+
+    def delete_node(self, node):
+        node.data = node.next.data
+        node.next = node.next.next
