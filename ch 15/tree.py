@@ -41,7 +41,7 @@ class TreeNode:
             else:
                 node.right_child = self.lift(node.right_child, node)
                 return node
-            
+
     def lift(self, node, parent):
         if node.left_child:
             node.left_child = self.lift(node.left_child, parent)
